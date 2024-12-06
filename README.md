@@ -85,7 +85,7 @@ With Komura, users can better understand their strengths and areas for improveme
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+
 
 ---
 
