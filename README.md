@@ -1,4 +1,4 @@
-# <div align="center">🎤 **Komura: Confident Voices Matter** 🎤</div>
+# <div align="center">🎤 **Komura: Confident Voices Matter** </div>
 
 Komura is a machine-learning-based application designed to help users boost their confidence when speaking in public or delivering presentations. The app provides feedback on users' presentation videos or audio, including analysis of word counts, filler words, and other metrics.
 
@@ -89,5 +89,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-<div align="center">🌐 **[Explore the Repository](https://github.com/orgs/presentation-app-capstone-bangkit/repositories)** 🌐</div>
-# .github
+<div align="center">🌐 [Explore the Repository](https://github.com/orgs/presentation-app-capstone-bangkit/repositories) 🌐</div>
