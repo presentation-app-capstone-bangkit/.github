@@ -1,12 +1,10 @@
 # <div align="center">🎤 **Komura: Confident Voices Matter** 🎤</div>
 
-![Komura Logo](https://via.placeholder.com/800x200?text=Komura+Logo)
-
 Komura is a machine-learning-based application designed to help users boost their confidence when speaking in public or delivering presentations. The app provides feedback on users' presentation videos or audio, including analysis of word counts, filler words, and other metrics.
 
 ---
 
-## 🌟 Theme: Empowering Minds: A Holistic Approach to Education and Personal Development
+## Empowering Minds: A Holistic Approach to Education and Personal Development
 
 ---
 
