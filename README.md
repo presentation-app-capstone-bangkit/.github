@@ -1,92 +1,89 @@
-# <div align="center">🎤 **Komura: Confident Voices Matter** </div>
+# Komura: Confident Voices Matter
 
-Komura is a machine-learning-based application designed to help users boost their confidence when speaking in public or delivering presentations. The app provides feedback on users' presentation videos or audio, including analysis of word counts, filler words, and other metrics.
+**Empowering Minds: A Holistic Approach to Education and Personal Development**
 
----
-
-## Empowering Minds: A Holistic Approach to Education and Personal Development
+Komura is an innovative mobile application designed to help users improve their public speaking skills. By leveraging machine learning techniques, the app provides real-time feedback on filler words, speaking pace, articulation, and body language, enabling users to develop confidence and master their presentation skills.
 
 ---
 
-## Project Description
+## Project Overview
 
-Komura was created as a tool to objectively evaluate a person's speaking performance. This application leverages machine learning technology to analyze audio or video files and offer improvement recommendations. 
-
-**Key Objectives**:
-- Help users identify filler words, speaking pace, and articulation clarity.
-- Empower individuals to improve their public speaking skills.
-- Create a supportive platform for continuous personal growth.
-
-With Komura, users can better understand their strengths and areas for improvement when speaking.
-
-## Key Features
-
-✨ **Filler Word Detection**: Identifies and counts filler words like "uh," "um," and similar terms.
-
-✨ **Speech Speed Analysis**: Evaluates whether the speaking pace is too fast, too slow, or appropriate.
-
-✨ **Word Count**: Counts the number of words used in the presentation.
-
-✨ **Articulation Evaluation**: Provides insights into articulation clarity.
-
-✨ **Improvement Recommendations**: Suggests ways to enhance speaking confidence.
+Public speaking remains a global challenge, with 75% of people experiencing glossophobia. Komura addresses this challenge by analyzing speech patterns and body language to provide actionable insights. By improving presentation style with live scoring and detailed analysis, users can grow into confident and effective communicators.
 
 ---
 
-## 🚀 Installation and Usage
+## Features
 
-1. **Clone this repository**:
+- **Real-time Feedback**: Provides analysis and scoring for:
+  - Filler words
+  - Speech speed
+  - Articulation
+  - Body language
+- **Speech Confidence Analysis**: Utilizes machine learning to evaluate user confidence based on input features.
+- **Intelligent Insights**: Uses audio and posture recognition for holistic public speaking improvement.
+- **Mobile Integration**: Deploys a lightweight TFLite model for Android, ensuring smooth and efficient user experience.
+
+---
+
+## Project Workflow
+
+### 1. **Dataset Preparation**
+- Source: Audio and body language datasets collected and preprocessed for model training.
+- Preprocessing: Tokenization, sequence padding, and augmentation with simulated filler words.
+
+### 2. **Model Training**
+- **Text Analysis Model**: Binary classification using Bi-LSTM layers for confidence prediction.
+- **Feature Engineering**:
+  - Counting filler words, connectors, and calculating speech duration.
+  - Estimating confidence levels using calculated features.
+- Fine-tuned using TensorFlow with early stopping and regularization.
+
+### 3. **Mobile Deployment**
+- Converted trained model to TensorFlow Lite for integration with Android apps.
+- Utilized Kotlin and Jetpack Compose for UI/UX development.
+
+---
+
+## Tech Stack
+
+- **Machine Learning**:
+  - TensorFlow, Keras, NumPy, Pandas, OpenCV
+- **Mobile Development**:
+  - Android Studio, Kotlin, Jetpack Compose
+- **Cloud**:
+  - Google App Engine, Cloud SQL, Cloud Storage
+- **Tools**:
+  - Jupyter Notebook, Visual Studio Code, Flask, CameraX, Figma, GitHub
+
+---
+
+## Model Training Pipeline
+
+1. **Dataset Processing**:
+   - Tokenized and padded transcripts for text feature extraction.
+   - Introduced variability with filler words and meaningless connectors.
+2. **Model Architecture**:
+   - Embedding layer for text representation.
+   - Bidirectional LSTMs for sequential data processing.
+   - Dense layers with regularization for binary classification.
+3. **Training**:
+   - Split dataset into training and testing sets.
+   - Applied exponential learning rate decay and early stopping.
+4. **Evaluation**:
+   - Metrics: Accuracy, ROC-AUC, confusion matrix, classification report.
+   - Visualized performance with loss and accuracy plots.
+
+---
+
+## How to Use
+
+### Requirements
+- Python 3.8+
+- TensorFlow 2.5+
+- Android Studio for app deployment
+
+### Steps
+1. **Clone Repository**:
    ```bash
-   git clone https://github.com/presentation-app-capstone-bangkit/repositories.git
-   cd komura
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Prepare the dataset**:
-   - Ensure the processed presentation transcript dataset is available in the `dataset/` folder.
-   
-4. **Run the application**:
-   ```bash
-   python app.py
-   ```
-
-5. **Use the web interface or CLI** to upload audio/video files and receive analysis results.
-
----
-
-## Technologies Used
-
-- **Python** (TensorFlow, scikit-learn, pandas, etc.)
-- **Jupyter Notebook** for experimentation and model development
-- **Matplotlib and Seaborn** for visualization
-- **Flask** (optional) for the web interface
-
----
-
-## 👥 Team Members
-
-**Team ID**: C242-PS024
-
-| Role  | Name                              | ID            | Institution                |
-|-------|-----------------------------------|---------------|----------------------------|
-| ML    | Dinda Putri Khairunnisa           | M506B4KX1162  | Institut Teknologi Batam   |
-| ML    | Adry Mirza Savaras                | M506B4KY0139  | Institut Teknologi Batam   |
-| ML    | Fakhri Aprianza                   | M506B4KY1379  | Institut Teknologi Batam   |
-| CC    | Intan Iqlima                      | C506B4KX1987  | Institut Teknologi Batam   |
-| CC    | Yusuf Hendrawan                   | C506B4KY4581  | Institut Teknologi Batam   |
-| MD    | Angga Kurniawan                   | A506B4KY0548  | Institut Teknologi Batam   |
-| MD    | Vinsensius Fendy Kurniawan        | A506B4KY4432  | Institut Teknologi Batam   |
-
----
-
-## License
-
-
-
----
-
-<div align="center">🌐 [Explore the Repository](https://github.com/orgs/presentation-app-capstone-bangkit/repositories) 🌐</div>
+   git clone <(https://github.com/presentation-app-capstone-bangkit)>
+   cd <presentation-app-capstone-bangkit>
